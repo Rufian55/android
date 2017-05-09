@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BlitsPost.com</string>
+    <string name="edit_message_1">[TextView] Capitalize Text</string>
+    <string name="button_1">Send</string>
+    <string name="edit_message_2">LinearLayout Horizontal</string>
+    <string name="button_2">See It!</string>
+    <string name="edit_message_2a">Please enter some multiline text!</string>
+    <string name="edit_message_3">LinearLayout Vertical</string>
+    <string name="button_3">Go!</string>
+    <string name="edit_message_4">GridLayout View</string>
+    <string name="button_4">Ta Daa!</string>
+    <string name="edit_message_5">RelativeLayout View</string>
+    <string name="button_5">Finally</string>
+</resources>
