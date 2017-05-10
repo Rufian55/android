@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Line 1 -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:text="@string/LLV_msg_01"/>
 
+    <!-- Line 2 -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:gravity="center"
+        android:textColor="#00CC00"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:text="@string/LLV_msg_02"/>
 
+    <!-- Line 3 -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:gravity="center"
+        android:lineSpacingExtra="16sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#3366FF"
+        android:textSize="26sp"
+        android:text="@string/LLV_msg_03"/>
 
+    <!-- Line 4, a 5-star Ratings Bar -->
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"/>
 
+    <!-- Line 5, a Multiline text entry box that does nothing. -->
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:hint="@string/edit_message_2a"/>
+        android:hint="@string/LLV_msg_04"/>
 
 </LinearLayout>

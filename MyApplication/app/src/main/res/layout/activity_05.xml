@@ -1,5 +1,438 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:padding="10dp">
 
-</RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_01" />
+            <TextView android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_11" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_02" />
+            <TextView android:id="@+id/age1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_12" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_03" />
+            <TextView android:id="@+id/gender1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_13" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_04" />
+            <TextView android:id="@+id/profession1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_14" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_05" />
+            <TextView android:id="@+id/phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_15" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_06" />
+            <TextView android:id="@+id/email1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_16" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_07" />
+            <TextView android:id="@+id/hobby1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_17" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/proficient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_08" />
+            <TextView android:id="@+id/proficient1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_18" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/exposure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_09" />
+            <TextView android:id="@+id/exposure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_19" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_10" />
+            <TextView android:id="@+id/addressa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_20" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address7a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address8a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address9a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address10a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address11a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address12a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address13a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address14a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address15a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address16a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address17a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address18a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address19a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address20a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address21a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address22a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address23a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address24a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/address25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SV_msg_21" />
+            <TextView android:id="@+id/address25a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:text="@string/SV_msg_22" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

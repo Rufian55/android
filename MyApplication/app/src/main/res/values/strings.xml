@@ -1,14 +1,56 @@
 <resources>
+    <!-- Used by activity_main.xml -->
     <string name="app_name">BlitsPost.com</string>
-    <string name="edit_message_1">[TextView] Capitalize Text</string>
+    <string name="edit_message_1">Enter Text to see All Caps</string>
     <string name="button_1">Send</string>
-    <string name="edit_message_2">LinearLayout Horizontal</string>
+    <string name="edit_message_2">LinearLayout Vertical</string>
     <string name="button_2">See It!</string>
-    <string name="edit_message_2a">Please enter some multiline text!</string>
-    <string name="edit_message_3">LinearLayout Vertical</string>
+    <string name="edit_message_3">LinearLayout Horizontal</string>
     <string name="button_3">Go!</string>
-    <string name="edit_message_4">GridLayout View</string>
+    <string name="edit_message_4">GridLayout</string>
     <string name="button_4">Ta Daa!</string>
-    <string name="edit_message_5">RelativeLayout View</string>
+    <string name="edit_message_5">ScrollView</string>
     <string name="button_5">Finally</string>
+    <string name="Banner">ConstraintLayout</string>
+    <!-- Used by activity_02.xml -->
+    <string name="LLV_msg_01">Layout: LinearLayout Vertical</string>
+    <string name="LLV_msg_02">Our Second Element!</string>
+    <string name="LLV_msg_03">Please Rate Our App</string>
+    <string name="LLV_msg_04">Please enter some multiline text!</string>
+    <!-- Used by activity_03.xml -->
+    <string name="LLH_msg_01">Enter\nA\nDigit</string>
+    <string name="LLH_msg_02">Radio\nButton</string>
+    <string name="LLH_msg_03">Copy\nDarth\nVader</string>
+    <string name="LLH_msg_04">Check\nBox</string>
+    <!-- Used by activity_04.xml -->
+    <string name="GV_msg_01">GridLayout View</string>
+    <string name="GV_msg_02">Boom!</string>
+    <string name="GV_msg_03">Bang!</string>
+    <string name="GV_msg_04">Biff!</string>
+    <string name="GV_msg_05">Boffo!</string>
+    <string name="GV_msg_06">Batman</string>
+    <string name="GV_msg_07">Holy GridLayout, Batman! Elements run amok!</string>
+    <!-- Used by activity_05.xml -->
+    <string name="SV_msg_01">Name:</string>
+    <string name="SV_msg_02">Age:</string>
+    <string name="SV_msg_03">Gender</string>
+    <string name="SV_msg_04">Profession:  </string>
+    <string name="SV_msg_05">Phone:</string>
+    <string name="SV_msg_06">Email</string>
+    <string name="SV_msg_07">Hobby</string>
+    <string name="SV_msg_08">Proficient At:  </string>
+    <string name="SV_msg_09">Exposure To:  </string>
+    <string name="SV_msg_10">Address:</string>
+    <string name="SV_msg_11">Chris Kearns</string>
+    <string name="SV_msg_12">0011 1000</string>
+    <string name="SV_msg_13">Male</string>
+    <string name="SV_msg_14">Student</string>
+    <string name="SV_msg_15">727&#8211;555&#8211;5555</string>
+    <string name="SV_msg_16">kearnsc@oregonstate.edu</string>
+    <string name="SV_msg_17">Guitar</string>
+    <string name="SV_msg_18">C, C++, JS, HTML/CSS, PHP, MySQLi</string>
+    <string name="SV_msg_19">Python, Java, x86 Masm, Bash, Linux</string>
+    <string name="SV_msg_20">Belleair Bluffs, FL</string>
+    <string name="SV_msg_21">some_Key</string>
+    <string name="SV_msg_22">some_Value</string>
 </resources>

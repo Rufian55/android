@@ -1,3 +1,19 @@
+/****************************************************************************************
+ *  CS496-400-S17, Chris Kearns, kearnsc@oregonstate.edu, 14 May 2017
+ *  Assignment: AndroidUI
+ *  MainActivity.java is the entry point to the BlitsPost.com App, aka, MyApplication
+ *  Dependencies, other than the Gradle Scripts and AS prebuilt xml files:
+ *  DisplayMessageActivity.java, Activity_02.java, Activity_03.java, Activity_04.java,
+ *  Activity_05.java, associated layout/*.xml files and values/*.xml
+ *  CITATIONS: Entire code base is adapted from:
+ *  [1] Lectures and materials as professed by Mr. Justin Wolford, Oregon State
+ *  University, 2017
+ *  [2] https://developer.android.com/guide/index.html and associated links from there.
+ *  [3] DisplayMessageActivity.java, activity_display_messages.xml, and function
+ *  sendMessages() is as developed from the Developer's Training section and the
+ *  implemented tutorial found at https://developer.android.com/training/index.html
+ *  [4] Numerous (approximately 20) stackoverflow.com searchs for minor syntax issues.
+ **************************************************************************************/
 package com.example.myapplication;
 
 import android.content.Intent;
