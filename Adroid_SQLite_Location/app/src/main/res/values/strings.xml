@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Demo App</string>
+    <string name="Banner">Main Screen</string>
+    <string name="edit_message_2">See your Coordinates</string>
+    <string name="edit_message_3">Save your Coordinates</string>
+    <string name="button_2">Go!</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+</resources>
