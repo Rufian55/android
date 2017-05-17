@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sql_listview_item">
+
+    <!-- User provided Location text entry. -->
+    <TextView
+        android:id="@+id/sql_listview_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3366FF"
+        android:layout_weight="0.19"
+        android:text="@string/NoData" />
+
+    <!-- Device / App provided Longitude Coordinate. -->
+    <TextView
+        android:id="@+id/sql_listview_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:text="@string/NoData" />
+
+    <!-- Device / App provided Latitude Coordinate. -->
+    <TextView
+        android:id="@+id/sql_listview_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:text="@string/NoData" />
+
+</LinearLayout>

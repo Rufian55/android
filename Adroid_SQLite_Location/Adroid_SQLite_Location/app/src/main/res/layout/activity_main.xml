@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="chris.adroid_sqlite_location.MainActivity">
+
+    <!-- Line 1, "Main Screen text" -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="310sp"
+        android:layout_height="46sp"
+        android:gravity="center"
+        android:text="@string/Banner"
+        android:textAlignment="center"
+        android:textColor="#BFBFBF"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp" />
+
+    <!--  Line 3, "See The Demo" text field. -->
+    <TextView
+        android:id="@+id/activityView_2"
+        android:layout_width="208sp"
+        android:layout_height="34sp"
+        android:text="@string/edit_message_2"
+        android:layout_marginTop="37sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintRight_toLeftOf="@+id/button2"
+        android:layout_marginRight="28sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginEnd="28sp"
+        android:layout_marginStart="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textSize="18sp"/>
+
+    <!--  Line 3, Go! Button -->
+    <Button
+        android:id="@+id/button2"
+        android:onClick="goToActivity_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:layout_marginTop="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"/>
+
+
+    <!--  Line 4, "See The Demo" text field. -->
+    <TextView
+        android:id="@+id/activityView_3"
+        android:layout_width="208sp"
+        android:layout_height="34sp"
+        android:text="@string/edit_message_3"
+        android:layout_marginTop="37sp"
+        app:layout_constraintTop_toBottomOf="@+id/activityView_2"
+        app:layout_constraintRight_toLeftOf="@+id/button3"
+        android:layout_marginRight="28sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginEnd="28sp"
+        android:layout_marginStart="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textSize="18sp"/>
+
+    <!--  Line 4, Go! Button -->
+    <Button
+        android:id="@+id/button3"
+        android:onClick="goToActivity_sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:layout_marginTop="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/button2"/>
+
+</android.support.constraint.ConstraintLayout>

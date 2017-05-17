@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Location Tracker App</string>
+    <string name="Banner">Main Screen</string>
+    <string name="edit_message_2">See your Coordinates</string>
+    <string name="edit_message_3">Save your Coordinates</string>
+    <string name="button_2">Go!</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="NoData">No Data!</string>
+    <string name="Location">Location:</string>
+    <string name="AddLocation">Add Current Locatiion</string>
+</resources>
