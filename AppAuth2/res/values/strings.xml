@@ -3,7 +3,8 @@
     <string name="Banner">OAuth 2.0 Demo App</string>
     <string name="edit_message_2">See the Demo</string>
     <string name="button_1">Go!</string>
-    <string name="button_2">Get Posts</string>
-    <string name="button_3">Make A Post</string>
+    <string name="button_2">Get Your Posts</string>
+    <string name="button_3">Make A New Post (Enter text below)</string>
+    <string name="hintText">Enter Text</string>
 
 </resources>

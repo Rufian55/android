@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/google_plus_item_date_text"
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="20dp" />
 
     <TextView
         android:id="@+id/google_plus_item_text"
