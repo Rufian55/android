@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/content_description"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:orientation="vertical"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"/>
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout_from_google"
+        android:visibility="gone"
+        android:layout_marginBottom="10sp"/>
+
+    <Button
+        android:id="@+id/btn_revoke_access"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_revoke_access"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_access_app"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_access_app"
+        android:visibility="gone" />
+
+</LinearLayout>

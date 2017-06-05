@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QuoteTrack</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="loading">Loading&#8230;</string>
+    <string name="content_description">User Image</string>
+    <string name="btn_access_app">QuoteTrack</string>
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "979479260488",
+    "project_id": "quotetrack-169521"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979479260488:android:0327b3b65ca8843e",
+        "android_client_info": {
+          "package_name": "com.blitspost.quotetrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979479260488-evkmokvvivkb8flpqsc29c0f90kph0ml.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "979479260488-gaaa0nh5j3stbb5lsvg3e1i01ugqkilj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blitspost.quotetrack",
+            "certificate_hash": "7558945f93b9ad1382db180f3e5bf2f722354d84"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHEkBxy9LKGa-XoLTFrCncg0pq2tmyh_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
