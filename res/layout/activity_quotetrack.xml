@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quotetrack"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuoteTrack"
+    android:weightSum="1">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  ROW 0  -->
+        <!-- Element 0,0 TextView -->
+        <TextView
+            android:id="@+id/textView0A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/DJI_name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 0,1 TextView -->
+        <TextView
+            android:id="@+id/textView0B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/DJI_Current"
+            android:textColor="#288132"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 0,2 TextView -->
+        <TextView
+            android:id="@+id/textView0C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/DJI_Points"
+            android:textColor="#288132"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 0,3 TextView -->
+        <TextView
+            android:id="@+id/textView0D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/DJI_Percent"
+            android:textColor="#288132"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp"/>
+
+        <!--  ROW 1  -->
+        <!-- Element 1,0 TextView -->
+        <TextView
+            android:id="@+id/textView1A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/SP_name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 1,1 TextView -->
+        <TextView
+            android:id="@+id/textView1B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/SP_Current"
+            android:textColor="#288132"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 1,2 TextView -->
+        <TextView
+            android:id="@+id/textView1C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/SP_Points"
+            android:textColor="#288132"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 1,3 TextView -->
+        <TextView
+            android:id="@+id/textView1D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/SP_Percent"
+            android:textColor="#288132"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 2  -->
+        <!-- Element 2,0 TextView -->
+        <TextView
+            android:id="@+id/textView2A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/NQ_name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 2,1 TextView -->
+        <TextView
+            android:id="@+id/textView2B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/NQ_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 2,2 TextView -->
+        <TextView
+            android:id="@+id/textView2C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/NQ_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 2,3 TextView -->
+        <TextView
+            android:id="@+id/textView2D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/NQ_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 3  -->
+        <!-- Element 3,0 TextView -->
+        <TextView
+            android:id="@+id/textView3A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 3,1 TextView -->
+        <TextView
+            android:id="@+id/textView3B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 3,2 TextView -->
+        <TextView
+            android:id="@+id/textView3C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 3,3 TextView -->
+        <TextView
+            android:id="@+id/textView3D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 4  *** Start Dynamic Tickers ***  -->
+        <!-- Element 4,0 TextView -->
+        <TextView
+            android:id="@+id/textView4A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 4,1 TextView -->
+        <TextView
+            android:id="@+id/textView4B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 4,2 TextView -->
+        <TextView
+            android:id="@+id/textView4C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 4,3 TextView -->
+        <TextView
+            android:id="@+id/textView4D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 5  -->
+        <!-- Element 5,0 TextView -->
+        <TextView
+            android:id="@+id/textView5A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 5,1 TextView -->
+        <TextView
+            android:id="@+id/textView5B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 5,2 TextView -->
+        <TextView
+            android:id="@+id/textView5C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 5,3 TextView -->
+        <TextView
+            android:id="@+id/textView5D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 6  -->
+        <!-- Element 6,0 TextView -->
+        <TextView
+            android:id="@+id/textView6A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 6,1 TextView -->
+        <TextView
+            android:id="@+id/textView6B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 6,2 TextView -->
+        <TextView
+            android:id="@+id/textView6C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 6,3 TextView -->
+        <TextView
+            android:id="@+id/textView6D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="6"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 7  -->
+        <!-- Element 7,0 TextView -->
+        <TextView
+            android:id="@+id/textView7A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 7,1 TextView -->
+        <TextView
+            android:id="@+id/textView7B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 7,2 TextView -->
+        <TextView
+            android:id="@+id/textView7C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 7,3 TextView -->
+        <TextView
+            android:id="@+id/textView7D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="7"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 8  -->
+        <!-- Element 8,0 TextView -->
+        <TextView
+            android:id="@+id/textView8A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 8,1 TextView -->
+        <TextView
+            android:id="@+id/textView8B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="8"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 8,2 TextView -->
+        <TextView
+            android:id="@+id/textView8C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="8"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 8,3 TextView -->
+        <TextView
+            android:id="@+id/textView8D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="8"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 9  -->
+        <!-- Element 9,0 TextView -->
+        <TextView
+            android:id="@+id/textView9A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 9,1 TextView -->
+        <TextView
+            android:id="@+id/textView9B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="9"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 9,2 TextView -->
+        <TextView
+            android:id="@+id/textView9C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="9"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 9,3 TextView -->
+        <TextView
+            android:id="@+id/textView9D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="9"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 10  -->
+        <!-- Element 10,0 TextView -->
+        <TextView
+            android:id="@+id/textView10A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="10"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 10,1 TextView -->
+        <TextView
+            android:id="@+id/textView10B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="10"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 10,2 TextView -->
+        <TextView
+            android:id="@+id/textView10C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="10"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 10,3 TextView -->
+        <TextView
+            android:id="@+id/textView10D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="10"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 11  -->
+        <!-- Element 11,0 TextView -->
+        <TextView
+            android:id="@+id/textView11A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="11"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 11,1 TextView -->
+        <TextView
+            android:id="@+id/textView11B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="11"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 11,2 TextView -->
+        <TextView
+            android:id="@+id/textView11C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="11"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 11,3 TextView -->
+        <TextView
+            android:id="@+id/textView11D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="11"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+        <!--  ROW 12  -->
+        <!-- Element 12,0 TextView -->
+        <TextView
+            android:id="@+id/textView12A"
+            android:layout_width="90dp"
+            android:layout_height="32sp"
+            android:layout_row="12"
+            android:layout_column="0"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="14sp"
+            android:paddingLeft="10sp"
+            android:text="@string/ticker0"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 12,1 TextView -->
+        <TextView
+            android:id="@+id/textView12B"
+            android:layout_width="120sp"
+            android:layout_height="32sp"
+            android:layout_row="12"
+            android:layout_column="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Current"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 12,2 TextView -->
+        <TextView
+            android:id="@+id/textView12C"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="12"
+            android:layout_column="2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Points"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <!-- Element 12,3 TextView -->
+        <TextView
+            android:id="@+id/textView12D"
+            android:layout_width="80sp"
+            android:layout_height="32sp"
+            android:layout_row="12"
+            android:layout_column="3"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/ticker0_Percent"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:paddingRight="10sp" />
+
+    </GridLayout>
+</LinearLayout>
