@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_edittickers"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editInput_0"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_0"
+        android:maxLines="1"
+        android:inputType="textCapWords"/>
+
+    <EditText
+        android:id="@+id/editInput_1"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_1"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_0"/>
+
+    <EditText
+        android:id="@+id/editInput_2"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_2"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_1"/>
+
+    <EditText
+        android:id="@+id/editInput_3"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_3"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_2"/>
+
+    <EditText
+        android:id="@+id/editInput_4"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_4"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_3"/>
+
+    <EditText
+        android:id="@+id/editInput_5"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_5"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_4"/>
+
+    <EditText
+        android:id="@+id/editInput_6"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_6"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_5"/>
+
+    <EditText
+        android:id="@+id/editInput_7"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_7"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_6"/>
+
+    <EditText
+        android:id="@+id/editInput_8"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_8"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_7"/>
+
+    <EditText
+        android:id="@+id/editInput_9"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:hint="@string/enter_ticker_9"
+        android:maxLines="1"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/editInput_8"/>
+
+    <TextView
+        android:id="@+id/textView_text"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_alignBaseline="@+id/editInput_0"
+        android:layout_alignBottom="@+id/editInput_1"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/editInput_0"
+        android:text="@string/edit_ticker_msg"
+        android:textAlignment="center" />
+
+    <!--  Line 2, Go! Button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_edit_tickers"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="47dp"
+        android:layout_below="@+id/textView_text"
+        android:layout_alignStart="@+id/textView_text" />
+
+</RelativeLayout>

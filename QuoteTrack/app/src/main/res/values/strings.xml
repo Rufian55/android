@@ -6,9 +6,49 @@
     <string name="content_description">User Image</string>
     <string name="btn_access_app">QuoteTrack</string>
 
+    <string name="Toast_1">Please check your internet connection!</string>
+
     <!-- Button text -->
     <string name="btn_logout_from_google">Logout from Google</string>
     <string name="btn_revoke_access">Revoke Access</string>
 
+    <!-- Tickers Permanent -->
+    <string name="DJI_name">DJIA</string>
+    <string name="DJI_Current">&#8230;</string>
+    <string name="DJI_Points">&#8230;</string>
+    <string name="DJI_Percent">&#8230;</string>
+
+    <string name="SP_name">S&amp;P-500</string>
+    <string name="SP_Current">&#8230;</string>
+    <string name="SP_Points">&#8230;</string>
+    <string name="SP_Percent">&#8230;</string>
+
+    <string name="NQ_name">NASDAQ</string>
+    <string name="NQ_Current">&#8230;</string>
+    <string name="NQ_Points">&#8230;</string>
+    <string name="NQ_Percent">&#8230;</string>
+
+    <!-- Tickers Dynamic -->
+    <string name="ticker0">&#8230;</string>
+    <string name="ticker0_Current">&#8230;</string>
+    <string name="ticker0_Points">&#8230;</string>
+    <string name="ticker0_Percent">&#8230;</string>
+
+    <string name="enter_ticker_0">Enter Ticker 1</string>
+    <string name="enter_ticker_1">Enter Ticker 2</string>
+    <string name="enter_ticker_2">Enter Ticker 3</string>
+    <string name="enter_ticker_3">Enter Ticker 4</string>
+    <string name="enter_ticker_4">Enter Ticker 5</string>
+    <string name="enter_ticker_5">Enter Ticker 6</string>
+    <string name="enter_ticker_6">Enter Ticker 7</string>
+    <string name="enter_ticker_7">Enter Ticker 8</string>
+    <string name="enter_ticker_8">Enter Ticker 9</string>
+    <string name="enter_ticker_9">Enter Ticker 10</string>
+    <string name="enter_ticker_msg">Please Enter up to 10 Ticker Symbols and press Enter Button</string>
+    <string name="edit_ticker_msg">These are your current tickers, Edit and press Enter Button</string>
+    <string name="button_edit_tickers">Enter</string>
+    <string name="button_new_acct">First Time Here!</string>
+    <string name="btnPatchAcct">Edit Tickers</string>
+    <string name="btnDeleteAcct">Delete Account!</string>
 
 </resources>

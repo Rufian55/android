@@ -1,15 +1,13 @@
 package com.blitspost.quotetrack;
 /* *************************************************************************************************
-*
-*
-*
-*
-*
-*
-*
+* MainActivity.java implements OpenIDConnect for the app and presents login views and buttons to
+* navigate the app.  Code adapted from:
+* [1] Lecture and materials as professed by Mr. Justin Wolfod, Oregon State University, 2017
 * [2] http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/
 * [3] https://stackoverflow.com/questions/41889990/google-sign-in-button-setscopes-deprecated
 * [4] https://stackoverflow.com/questions/8517730/how-to-get-text-from-textview
+* [5] Color Scheme: http://www.colourlovers.com/blog/2007/09/21/the-new-colors-of-us-money  AND
+*    https://stackoverflow.com/questions/10156816/android-how-to-set-background-color-of-all-screens
 ***************************************************************************************************/
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -73,16 +71,15 @@ public class MainActivity extends AppCompatActivity implements
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
+                .requestId()
                 .build();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
-
-        // Customizing G+ button
+        // Customize G+ SignIn button
         btnSignIn.setSize(SignInButton.SIZE_STANDARD);
-        //btnSignIn.setScopes(gso.getScopeArray());
     }
 
 
@@ -130,6 +127,7 @@ public class MainActivity extends AppCompatActivity implements
             String personName = acct.getDisplayName();
             String personPhotoUrl = acct.getPhotoUrl().toString();
             String email = acct.getEmail();
+            String id = acct.getId();
 
             Log.e(TAG, "Name: " + personName + ", email: " + email
                     + ", Image: " + personPhotoUrl);
@@ -157,15 +155,12 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.btn_sign_in:
                 signIn();
                 break;
-
             case R.id.btn_sign_out:
                 signOut();
                 break;
-
             case R.id.btn_revoke_access:
                 revokeAccess();
                 break;
-
             case R.id.btn_access_app:
                 goToApp();
                 break;
@@ -189,15 +184,15 @@ public class MainActivity extends AppCompatActivity implements
 
         OptionalPendingResult<GoogleSignInResult> opr = Auth.GoogleSignInApi.silentSignIn(mGoogleApiClient);
         if (opr.isDone()) {
-            // If the user's cached credentials are valid, the OptionalPendingResult will be "done"
-            // and the GoogleSignInResult will be available instantly.
+            /* If the user's cached credentials are valid, the OptionalPendingResult will be "done"
+               and the GoogleSignInResult will be available immediately. */
             Log.d(TAG, "Got cached sign-in");
             GoogleSignInResult result = opr.get();
             handleSignInResult(result);
         } else {
-            // If the user has not previously signed in on this device or the sign-in has expired,
-            // this asynchronous branch will attempt to sign in the user silently.  Cross-device
-            // single sign-on will occur in this branch.
+            /* If the user has not previously signed in on this device or the sign-in has expired,
+               this asynchronous branch will attempt to sign in the user silently.  Cross-device
+               single sign-on will occur in this branch. */
             showProgressDialog();
             opr.setResultCallback(new ResultCallback<GoogleSignInResult>() {
                 @Override
@@ -211,8 +206,8 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        // An unresolvable error has occurred and Google APIs (including Sign-In) will not
-        // be available.
+        /* An unresolvable error has occurred and Google APIs (including Sign-In) will not
+           be available. */
         Log.d(TAG, "onConnectionFailed:" + connectionResult);
     }
 
@@ -222,7 +217,6 @@ public class MainActivity extends AppCompatActivity implements
             mProgressDialog.setMessage(getString(R.string.loading));
             mProgressDialog.setIndeterminate(true);
         }
-
         mProgressDialog.show();
     }
 
